@@ -28,7 +28,7 @@
   <h1>Tinam-<i>who?</i></h1>
   <h2>Random tinamou generator</h2>
 
-  <p>Time to see a beautiful <a href="https://en.wikipedia.org/wiki/Tinamou">tinamou</a>!</p>
+  <p>Time to see a beautiful <a href="https://en.wikipedia.org/wiki/Tinamou">tinamou</a>! <input id="anotherTinamou" type="button" value="Another tinamou!" /></p>
   <ul id="t-list">
     <li style="display: none;"><img src="img/2560px-Elegant_Crested_Tinamou_(Eudromia_elegans)_(15953728501).jpg" alt="Elegant Crested Tinamou" /></li>
     <li style="display: none;"><img src="img/Brushland_Tinamou.jpg" alt="Brushland Tinamou"/></li>
@@ -42,14 +42,14 @@
     <li style="display: none;"><img src="img/Eudromia_[e.]_elegans.jpg" alt="Elegant Crested Tinamou" /></li>
   </ul>
 
-  <p><input id="anotherTinamou" type="button" value="Another tinamou!" /></p>
+  <!--<p><input id="anotherTinamou" type="button" value="Another tinamou!" /></p>-->
   <script>
     function showRandomTinamou() {
       console.log("Time to show one random tinamou")
       let lis = document.getElementById("t-list").children;
       // Hide all tinamous
       for (let i = 0; i < lis.length; i++) {
-        lis[i].display = 'none';
+        lis[i].style.display = 'none';
       } 
       // Select one tinamou at random
       let chosenIndex = Math.floor(Math.random() * lis.length);
