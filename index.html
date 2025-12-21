@@ -37,10 +37,10 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       console.log( "Time to load the tinamous!" );
-      var lis = document.getElementById("t-list").children;
-      let i = Math.floor(Math.random() * lis.length);
-      let r = lis[i];
-      r.show();
+      const lis = document.getElementById("t-list").children;
+      i = Math.floor(Math.random() * lis.length);
+      r = lis[i];
+      r.style.display = 'block';
     });
   </script>
 </body>
