@@ -49,7 +49,7 @@
       let lis = document.getElementById("t-list").children;
       // Hide all tinamous
       for (let i = 0; i < lis.length; i++) {
-        lis.display = 'none';
+        lis[i].display = 'none';
       } 
       // Select one tinamou at random
       let chosenIndex = Math.floor(Math.random() * lis.length);
@@ -58,7 +58,7 @@
       chosen.style.display = 'block';
     };
     document.addEventListener("DOMContentLoaded", function() {
-      console.log( "Time to load the tinamous!" );
+      console.log( "Loaded all the tinamous!" );
       showRandomTinamou();
     });
     document.getElementById("anotherTinamou").onclick = function () { 

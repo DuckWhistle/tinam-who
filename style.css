@@ -16,3 +16,10 @@
   max-height: 100vh;
   margin: auto;
 }
+
+input {
+  padding: 0.5em;
+  background: #8B4513;
+  color: white;
+  margin: 1em;
+}
