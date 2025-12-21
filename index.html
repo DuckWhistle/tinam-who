@@ -11,15 +11,16 @@
 
   <meta property="og:title" content="Tinam-who?">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="">
+  <meta property="og:url" content="https://duckwhistle.github.io/tinam-who/">
   <meta property="og:description" content="Random tinamou generator.">
   <meta property="og:image" content="image.png">
 </head>
 <body>
 
-  <h1>Tinam-<i><who?</i></h1>
-  <p>Random tinamou generator</p>
+  <h1>Tinam-<i>who?</i></h1>
+  <h2>Random tinamou generator</h2>
 
+  <p>Time to see a beautiful <a href="https://en.wikipedia.org/wiki/Tinamou>tinamou</a>!</p>
   <ul id="t-list">
     <li style="display: none;"><img src="img/2560px-Elegant_Crested_Tinamou_(Eudromia_elegans)_(15953728501).jpg" alt="Elegant Crested Tinamou" /></li>
     <li style="display: none;"><img src="img/Brushland_Tinamou.jpg" alt="Brushland Tinamou"/></li>
@@ -32,9 +33,9 @@
     <li style="display: none;"><img src="img/Tinamus_majorPCSL00504B.jpg" alt="Great Tinamou" /></li>
   </ul>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <p>Reload the page to see another tinamou. </p>
   <script>
-    $(function() {
+    document.addEventListener("DOMContentLoaded", function() {
       console.log( "Time to load the tinamous!" );
       var lis = $("#t-list").children;
       let i = Math.floor(Math.random() * lis.length);
