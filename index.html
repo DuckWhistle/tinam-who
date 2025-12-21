@@ -20,7 +20,7 @@
   <h1>Tinam-<i>who?</i></h1>
   <h2>Random tinamou generator</h2>
 
-  <p>Time to see a beautiful <a href="https://en.wikipedia.org/wiki/Tinamou>tinamou</a>!</p>
+  <p>Time to see a beautiful <a href="https://en.wikipedia.org/wiki/Tinamou">tinamou</a>!</p>
   <ul id="t-list">
     <li style="display: none;"><img src="img/2560px-Elegant_Crested_Tinamou_(Eudromia_elegans)_(15953728501).jpg" alt="Elegant Crested Tinamou" /></li>
     <li style="display: none;"><img src="img/Brushland_Tinamou.jpg" alt="Brushland Tinamou"/></li>
@@ -37,7 +37,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       console.log( "Time to load the tinamous!" );
-      var lis = $("#t-list").children;
+      var lis = document.getElementById("t-list").children;
       let i = Math.floor(Math.random() * lis.length);
       let r = lis[i];
       r.show();
