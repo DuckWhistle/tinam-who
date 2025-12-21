@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tinam-who?</title>
   <link href="style.css" rel="stylesheet" />
 
@@ -17,10 +18,29 @@
 <body>
 
   <h1>Tinam-<i><who?</i></h1>
-  <p>Who's that tinamou?</p>
+  <p>Random tinamou generator</p>
+
+  <ul id="t-list">
+    <li style="display: none;"><img src="img/2560px-Elegant_Crested_Tinamou_(Eudromia_elegans)_(15953728501).jpg" alt="Elegant Crested Tinamou" /></li>
+    <li style="display: none;"><img src="img/Brushland_Tinamou.jpg" alt="Brushland Tinamou"/></li>
+    <li style="display: none;"><img src="img/Crested_Tinamou_Bronx_Zoo.JPG" alt="Elegant Crested Tinamou" /></li>
+    <li style="display: none;"><img src="img/Crypturellus_cinereus.jpg" alt="Cinereus Tinamou" /></li>
+    <li style="display: none;"><img src="img/NothocercusNigricapillusSmit.jpg" alt="Hooded Tinamou" /></li>
+    <li style="display: none;"><img src="img/Rhynchotus_rufescens_-Parque_das_Aves-8a.jpg" alt="Red-winged Tinamou" /></li>
+    <li style="display: none;"><img src="img/Tinamotis_ingoufi.JPG" alt="Patagonian Tinamou" /></li>
+    <li style="display: none;"><img src="img/Tinamotis_pentlandii.tif.jpg" alt="Puna Tinamou group" /></li>
+    <li style="display: none;"><img src="img/Tinamus_majorPCSL00504B.jpg" alt="Great Tinamou" /></li>
+  </ul>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>
+    $(function() {
+      console.log( "Time to load the tinamous!" );
+      var lis = $("#t-list").children;
+      let i = Math.floor(Math.random() * lis.length);
+      let r = lis[i];
+      r.show();
+    });
   </script>
 </body>
 </html>
